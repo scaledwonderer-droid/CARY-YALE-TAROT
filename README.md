@@ -7,6 +7,7 @@ HTML・CSS・Vanilla JavaScriptだけで動作します。外部サーバー、�
 ## Features
 
 - 89枚（Major Arcana 25枚＋Minor Arcana 64枚）から重複なしで3枚抽選
+- Major Arcana 25枚とMinor Arcana 64枚、合計89枚のWebP画像を同梱
 - 各カードの正位置／逆位置を独立して50%で決定
 - 過去・現在・未来を自由な順番で開けるカードフリップ
 - 3枚を開いた後のリーディング一覧
