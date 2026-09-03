@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#070812">
+    <meta
+      name="description"
+      content="Cary-Yale Tarotで過去・現在・未来を読み解く、静かな3枚引きタロットリーディング。"
+    >
+    <title>Cary-Yale Tarot | Three Card Reading</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/cards.js" defer></script>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient-light ambient-light--cyan" aria-hidden="true"></div>
+    <div class="ambient-light ambient-light--magenta" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <p class="eyebrow">CARY-YALE TAROT</p>
+      <h1>Three Card Reading</h1>
+      <div class="ornament" aria-hidden="true"><span></span></div>
+    </header>
+
+    <main>
+      <section class="intro" id="intro" aria-labelledby="intro-title">
+        <h2 id="intro-title" class="visually-hidden">3枚引きリーディング</h2>
+        <p>過去・現在・未来を表す<br class="mobile-break">3枚のカードを引きます。</p>
+        <button class="primary-button" id="draw-button" type="button">
+          <span>3枚のカードを引く</span>
+          <span class="button-mark" aria-hidden="true">◇</span>
+        </button>
+      </section>
+
+      <section class="reading" id="reading" aria-labelledby="reading-title" hidden>
+        <div class="section-heading">
+          <p class="section-kicker">PAST · PRESENT · FUTURE</p>
+          <h2 id="reading-title">伏せられたカード</h2>
+          <p id="reading-instruction">カードを選び、1枚ずつ開いてください。</p>
+        </div>
+
+        <div class="card-grid" id="card-grid"></div>
+
+        <p class="reading-status" id="reading-status" aria-live="polite"></p>
+      </section>
+
+      <section class="result" id="result" aria-labelledby="result-title" hidden>
+        <div class="result-heading">
+          <p class="section-kicker">YOUR READING</p>
+          <h2 id="result-title">今回のリーディング</h2>
+        </div>
+        <div class="result-list" id="result-list"></div>
+
+        <div class="text-output" aria-labelledby="text-output-title">
+          <div class="text-output-heading">
+            <div>
+              <p class="section-kicker">TEXT RESULT</p>
+              <h3 id="text-output-title">テキスト結果</h3>
+            </div>
+            <button class="secondary-button copy-button" id="copy-button" type="button">
+              結果をコピー
+            </button>
+          </div>
+          <textarea
+            class="reading-text"
+            id="reading-text"
+            aria-label="今回のリーディング結果のテキスト"
+            readonly
+          ></textarea>
+          <p class="copy-status" id="copy-status" aria-live="polite"></p>
+        </div>
+
+        <button class="secondary-button" id="redraw-button" type="button">
+          もう一度引く
+        </button>
+      </section>
+    </main>
+
+    <footer>
+      <p>89 Cards · Cary-Yale Tarot</p>
+    </footer>
+  </body>
+</html>
